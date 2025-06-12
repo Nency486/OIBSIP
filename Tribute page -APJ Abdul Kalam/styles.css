@@ -1,0 +1,94 @@
+/* Cool, aesthetic colors and styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #2e5c6e;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  color: #444;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  max-width: 200px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.quote {
+  background: #f0f8ff;
+  padding: 30px;
+  border-left: 5px solid #77aaff;
+  font-style: italic;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  background: #ffffffaa;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #6ca0dc;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.timeline li:hover {
+  background: #d6eaff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
