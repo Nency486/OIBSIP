@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" style="text-align: center; padding: 30px;">
+    <h2>Hello 👋</h2>
+    <p>You are now logged in.
+      Welcome To Your New Account.
+      Your Information Will Always Be Secured Here.
+    </p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    if (!localStorage.getItem("loggedInUser")) {
+      window.location.href = "index.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
