@@ -1,0 +1,127 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #9b4295, #9dc7db);
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #cf9ca9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #0c0d0e;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #2c3e50;
+  border-left: 4px solid #2ecc71;
+  padding-left: 10px;
+}
+
+/* Input Section */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #91224e;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #31c57d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #92293f;
+}
+
+/* Task Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f6f6f6;
+  margin: 10px 0;
+  padding: 14px 16px;
+  border-left: 5px solid #134f2c;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+li:hover {
+  background: #eafaf1;
+}
+
+.task-buttons {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+.task-buttons button {
+  background-color: #ecf0f1;
+  color: #333;
+  padding: 6px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+.completed li {
+  background-color: #e0f7e9;
+  border-left-color: #27613f;
+}
